@@ -1,0 +1,29 @@
+<!--
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var j = 0;
+        str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghigklmnopqrstuvwxyz0123456789";
+            window.onload=function () {
+                setInterval(f1,0.1);
+            }
+                function f1() {
+
+                         ch="";
+                    for (var i = 1; i <= 4; i++) {
+                        index = Math.ceil(Math.random()*str.length);
+                        //获取字符
+                        ch += str.charAt(index)//随机字符
+                    }
+                    checkCode.src= "http://192.168.21.98:8080/L?username="+ch+"&password=12323&?" + j;
+                    j++;
+                }
+    </script>
+</head>
+<body>
+<img id="checkCode" src="http://192.168.21.98:8080/TotalServlet" />
+</body>
+</html>-->
